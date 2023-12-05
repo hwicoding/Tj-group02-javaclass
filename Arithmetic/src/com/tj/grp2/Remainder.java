@@ -6,14 +6,14 @@ public class Remainder {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public void remainder(int num1, int num2, int num3) {
+	public int[] remainder(int num1, int num2, int num3) {
 		int result1 = 0;
 		int result2 = 0;
-		String result = "";
-
-		result1 = num1 % num3;
-		result2 = num2 % num3;
+		int[] arr = new int[2];
 		
-		System.out.print("num1 % num3 : "+result1+" , num2 % num3 : "+result2);
+		arr[0] = num1 % num3;
+		arr[1] = num2 % num3;
+
+		return arr;
 	}
 }
